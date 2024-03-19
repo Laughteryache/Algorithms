@@ -23,6 +23,4 @@ def binary_search(sorted_arr: list, to_search: int) -> int | None:
 # lst = [5] x = 5
 # lst = [1, 3, 5, 7, 9] x = 4
 # lst = [1, 3, 5, 7, 9] x = 5
-
-
-print(binary_search([1, 3, 5, 7, 9], 4))
+# lst = [5] x = 4

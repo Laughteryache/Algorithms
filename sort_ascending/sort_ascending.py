@@ -1,6 +1,6 @@
 def sort_ascending(arr: list[int]) -> list[int]:
     
-    # Create function which find index pf the smallest number
+    # Create function which find index of the smallest number
     def find_smallest(arr: list[int]) -> int:
         smallest = arr[0]
         smallest_index = 0
@@ -13,10 +13,9 @@ def sort_ascending(arr: list[int]) -> list[int]:
     # Sorting process
     sorted_arr = []
     for i in range(len(arr)):
-        smallest = find_smallest(arr)
-        sorted_arr.append(arr.pop(smallest))
+        smallest_index = find_smallest(arr)
+        sorted_arr.append(arr.pop(smallest_index))
     return sorted_arr
-
 
 # Some tests
 # arr = [5, 5, 5, 5, 5]
